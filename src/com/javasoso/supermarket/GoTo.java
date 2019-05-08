@@ -49,9 +49,6 @@ public class GoTo {
                         PeopleInformation.jieMian();
                         break;
 
-
-
-
                     case 2:
                         Goodsxlm.shopping();
                         break;
