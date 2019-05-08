@@ -48,6 +48,10 @@ public class GoTo {
                         //在这创建一个PeopleInformation类的对象，
                         PeopleInformation.jieMian();
                         break;
+
+
+
+
                     case 2:
                         Goodsxlm.shopping();
                         break;
