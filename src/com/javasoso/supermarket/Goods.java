@@ -1,25 +1,24 @@
 package com.javasoso.supermarket;
 
-import java.util.ArrayList;
-
 public class Goods {
-    private String Goodsname;
+    private String goodsname;
     private int price;
+
 
     public Goods() {
     }
 
     public Goods(String goodsname, int price) {
-        Goodsname = goodsname;
+        this.goodsname = goodsname;
         this.price = price;
     }
 
     public String getGoodsname() {
-        return Goodsname;
+        return goodsname;
     }
 
     public void setGoodsname(String goodsname) {
-        Goodsname = goodsname;
+        this.goodsname = goodsname;
     }
 
     public int getPrice() {

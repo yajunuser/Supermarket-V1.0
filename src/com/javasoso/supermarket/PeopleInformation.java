@@ -1,18 +1,20 @@
 package com.javasoso.supermarket;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class PeopleInformation {
-    static Member a = new Member(1900, "08/05", 2000);
-    static Member b = new Member(1711, "07/13", 4000);
-    static Member c = new Member(1623, "08/05", 5000);
-    static Member d = new Member(1545, "08/05", 2200);
-    static Member e = new Member(1464, "08/05", 1000);
-    static Member f = new Member(1372, "08/05", 3000);
-    static Member g = new Member(1286, "08/05", 10080);
-    static ArrayList<Member> members = new ArrayList<Member>();
-    static {
+    private static Member a = new Member(1900, "08/05", 2000);
+    private static Member b = new Member(1711, "07/13", 4000);
+    private static Member c = new Member(1623, "08/05", 5000);
+    private static Member d = new Member(1545, "08/05", 2200);
+    private static Member e = new Member(1464, "08/05", 1000);
+    private static Member f = new Member(1372, "08/05", 3000);
+    private static Member g = new Member(1286, "08/05", 10080);
+    private  static ArrayList<Member> members = new ArrayList<Member>();
+     static {
         members.add(a);
         members.add(b);
         members.add(c);
@@ -21,6 +23,14 @@ public class PeopleInformation {
         members.add(f);
         members.add(g);
     }
+    public static HashSet<Integer> getMemberId() {
+         HashSet<Integer> getID = new HashSet<Integer>();
+        for (Member m : members) {
+            getID.add(m.getId());
+        }
+        return getID;
+    }
+
     public static  ArrayList<Member> getMember(){
         return members;
     }
@@ -121,8 +131,9 @@ public class PeopleInformation {
         }
     }
 
-    public void bianli(Member a) {
-        System.out.println(a.getId() + "\t" + a.getDay() + "\t" + a.getJifen());
+    public static void bianli(Member a) {
+
+         System.out.println(a.getId() + "\t" + a.getDay() + "\t" + a.getJifen());
     }
 
 }
