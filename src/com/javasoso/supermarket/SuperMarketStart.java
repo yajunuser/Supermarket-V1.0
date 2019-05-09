@@ -33,6 +33,7 @@ public class SuperMarketStart {
             switch (key) {
                 case 1:
 
+//
 //                    Scanner ss = new Scanner(System.in);
                     System.out.println("请输入您的管理账号：");
                     String name = in.nextLine();

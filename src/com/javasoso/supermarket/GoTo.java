@@ -53,6 +53,7 @@ public class GoTo {
                         Goodsxlm.shopping();
                         break;
                     case 3:
+                        Repayment.giveGood();
                         break;
                     case 4:
                         System.exit(0);
